@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',
+        sans-serif;
+}
+
+.bg-landing {
+    width: 28em;
+}
+
+.explore {
+    font-weight: 700;
+    background: -webkit-linear-gradient(#F0B71C, #105642);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.img-bumbu {
+    top: 32em;
+}
+
+.bg-card {
+    background-color: #105642;
+}
+
+.bg-green-color {
+    background-color: #105642;
+}
+
+/* slider testimoni */
+
+.scrollmenu {
+    display: flex;
+    overflow-x: auto;
+}
+
+.scrollmenu .item {
+    min-width: 430px;
+    height: 220px;
+    margin: 10px;
+    padding: 15px;
+}
+
+.scrollmenu::-webkit-scrollbar {
+    width: 0;
+}
+
+.menuslider{
+    display: flex;
+    overflow-x: auto;
+}
+
+.menuslider .item {
+    min-width: 290px;
+    height:auto;
+    margin: 10px;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.menuslider::-webkit-scrollbar {
+    width: 0;
+}
+
+
+
+
+/* Media Mobile */
+@media (max-width: 767px) {
+    .bg-landing{
+        width: 10em;
+    }
+
+    .img-bumbu{
+        top: 18em;
+    }
+
+    .menuslider .item {
+        min-width: 200px;
+        height: auto;
+        margin: 10px;
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+
+    .scrollmenu .item {
+        min-width: 360px;
+        height: 180px;
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .slider-hidden{
+        display: none;
+    }
+}
+
+
+
+/* Medium Laptop */
+@media only screen and (max-width: 1279px) and (min-width: 1024px) {
+    .bg-landing {
+        width: 25em;
+    }
+
+}
+
+
+
+/* tablet */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .bg-landing{
+        width: 18em;
+    }
+
+}
+
+
+/* sm to md */
+@media only screen and (max-width: 767px) and (min-width: 640px) {
+    .bg-landing{
+        width: 16em;
+    }
+    .img-bumbu {
+        top: 23em;
+    }
+
+    .scrollmenu .item {
+        min-width: 440px;
+        height: 220px;
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* slide show */
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
